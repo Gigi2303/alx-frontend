@@ -1,13 +1,12 @@
-/* Define custom properties on the root element */
 :root {
-    --color-primary: #d73953;
+	--color-primary: #d73953;
 	--color-black: #090909;
 	--color-white: #ffffff;
 	--color-light-grey: #f3f3f3;
 	--color-dark-grey: #353535;
 	--text-color: var(--color-black);
-	--font-family-base: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
-	--font-family-title: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+	--font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-size-small: 1.2rem;
 	--font-size-medium: 1.6rem;
 	--font-size-large: 1.8rem;
@@ -22,67 +21,66 @@
 	--section-tagline-transform: uppercase;
 	--section-title-margin: 0;
 	--section-title-color: var(--color-black);
-}
-
-html {
+  }
+  
+  html {
+	scroll-behavior: smooth;
 	font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-/* Set the foreground color for the body */
-body {
-	line-height: var(--line-height-base);
-	background-color: var(--text-color);
+  }
+  
+  body {
+	color: var(--text-color);
 	font-family: var(--font-family-base);
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-regular);
-}
-/* Set the foreground color for all anchor elements */
-a[href] {
-	color: var(--text-color);
+	line-height: var(--line-height-base);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-title);
+	font-weight: var(--font-weight-bold);
+  }
+  
+  a:link {
+	color: #161616;
 	text-decoration: none;
-}
-a[href]:visited {
-    font-style: italic;
-}
-
-/* Underline text for hovered links */
-a[href]:hover {
-    text-decoration: underline;
-}
-
-/* Set background color for active links */
-a[href]:active {
-    background-color: var(--color-light-grey);
-}
-
-/* Set display to none for elements with the class visually-hidden */
-.visually-hidden {
-    display: none;
-}
-/* Set the foreground color for elements with the class card-category */
-.card-category {
-    color: var(--color-primary);
-}
-/* horizontal alignment */
-.section-header {
+  }
+  
+  a:visited {
+	font-style: italic;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  a:active {
+	background-color: var(--color-light-grey);
+  }
+  
+  .visually-hidden {
+	display: none;
+  }
+  
+  .card-category {
+	color: var(--color-primary);
+  }
+  
+  .section-header {
 	text-align: var(--section-header-align);
-}
-.section-title {
+  }
+  
+  .section-title {
 	font-family: var(--font-family-title);
 	font-size: var(--font-size-xx-large);
 	font-weight: var(--font-weight-bold);
 	margin: var(--section-title-margin);
-    color: var(--section-title-color);
-}
-/* Set the foreground color for elements with the class section-tagline */
-.section-tagline {
+	color: var(--section-title-color);
+  }
+  
+  .section-tagline {
+	color: var(--color-primary);
 	font-family: var(--font-family-title);
 	text-transform: var(--section-tagline-transform);
 	font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
-}
-/* Use custom property for section headings font-family */
-h1, h2, h3, h4, h5, h6 {
-	font-family: var(--font-family-title);
-	font-weight: var(--font-weight-bold);
-}
+  }
